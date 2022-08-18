@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+
+  background-image: linear-gradient(
+    0deg,
+    rgba(240, 187, 128, 0.5),
+    rgba(235, 233, 230, 0.5)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: "Dosis", sans-serif;
+}
+
+.container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  width: auto;
+}
+
+.logo {
+  text-align: center;
+  max-width: 10rem;
+  animation: logo-fly-in 4s ease-in-out 0s 1 both,
+    logo-turbulences 15s ease-in-out 4.5s infinite none;
+}
+
+// @keyframes logo-turbulences {
+//   0%,
+//   100% {
+//     transform: translate(0, 0);
+//   }
+//   25% {
+//     transform: translate(0, -8px);
+//   }
+//   50% {
+//     transform: translate(0, 8px);
+//   }
+//   75% {
+//     transform: translate(0, 3px) scale(1.025);
+//   }
+// }
+
+@keyframes logo-fly-in {
+  0% {
+    opacity: 0.1;
+    transform: translate(-50vw, 0);
+  }
+  5% {
+    opacity: 0.1;
+    transform: translate(-40vw, 0);
+  }
+  10% {
+    opacity: 0.2;
+    transform: translate(-30vw, 0);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translate(0, 10rem);
+  }
+}
+
+// .main {
+//   color: white;
+//   text-align: center;
+// }
+// .main--heading {
+//   margin-bottom: 5px;
+//   text-shadow: 0px 0px 50px black;
+// }
+
+// .button {
+//   margin-top: 10px;
+//   font-weight: bold;
+//   color: white;
+//   text-decoration: none;
+//   background-color: rgb(156, 117, 92);
+//   padding: 10px 20px 10px 20px;
+//   display: inline-block;
+//   border-radius: 10000px;
+// }
+
+// .button:hover {
+//   background-image: radial-gradient(
+//     circle at 50% 50%,
+//     rgb(135, 111, 96) 1%,
+//     rgb(92, 75, 64) 1%
+//   );
+//   background-size: 20000% 20000%;
+//   background-position: 50% 50%;
+//   background-repeat: no-repeat;
+//   transition: background-size linear 0.25s;
+// }
+// .button:hover:active {
+//   transition-duration: 0s;
+//   background-size: 100% 100%;
+// }
